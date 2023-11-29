@@ -1,4 +1,4 @@
-import { useContext, useEffect, useMemo } from "react";
+import { useContext, useMemo } from "react";
 import { useParams } from "react-router-dom";
 
 import { findQuizById } from "../../utils/quiz";
@@ -7,7 +7,7 @@ import Button from "../../components/tailwind/Button";
 
 export default function QuizView() {
   const { id } = useParams();
-  const { quizzes, setQuizzes } = useContext(QuizContext);
+  const { quizzes } = useContext(QuizContext);
   const curQuiz = useMemo(() => findQuizById(quizzes, id), [id, quizzes]);
 
   return (

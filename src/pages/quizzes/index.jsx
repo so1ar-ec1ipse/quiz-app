@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { QuizContext } from "../../contexts/QuizContext";
 import Card from "../../components/tailwind/Card";
 import Button from "../../components/tailwind/Button";
