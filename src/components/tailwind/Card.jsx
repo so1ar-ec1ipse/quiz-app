@@ -13,9 +13,9 @@ export default function Card({ href, title, description, extra }) {
       onClick={handleClick}
     >
       <div>
-        <div className="font-bold text-xl mb-2">{title}</div>
+        <div className="font-bold text-xl mb-2 truncate">{title}</div>
       </div>
-      <p className="text-gray-700 text-base flex-1 mb-4">{description}</p>
+      <p className="text-gray-700 text-base flex-1 mb-4 break-words">{description}</p>
       <ul className="text-xs">
         {Object.values(extra ?? {})?.map((content, index) => (
           <li key={index} className="truncate">
