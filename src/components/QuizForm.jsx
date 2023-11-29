@@ -47,7 +47,7 @@ export default function QuizForm({ quiz, setQuiz, onSubmit }) {
         </div>
         <div className="flex items-center gap-2">
           <b>Score:</b>
-          <Input type="number" defaultValue={quiz?.score} name="score" required />
+          <Input type="number" defaultValue={quiz?.score} min={1} name="score" required />
         </div>
         <div className="flex items-center gap-2">
           <b>Media url:</b>
